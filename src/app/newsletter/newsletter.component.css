@@ -1,0 +1,10 @@
+form {
+    border: 3px solid grey;
+    border-radius: 2px;
+    width: 300px;
+    right:5px;
+    top: 300px;
+    position: absolute;
+    background:whitesmoke;
+    padding: 5px;
+}
