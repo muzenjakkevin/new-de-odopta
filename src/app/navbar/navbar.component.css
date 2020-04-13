@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+nav{
+width: 100%;
+}
+
+li {
+  line-height: 1;
+  font-size: 40px;
+  display: inline;
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 95, 119);
+}
+
+a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0080ff;
+}

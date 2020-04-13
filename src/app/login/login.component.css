@@ -1,0 +1,68 @@
+.login-form{
+    border-radius: 7px;
+    position: relative;
+    top: 20vh;
+    left: 32vw;
+    width: 40vw;
+    height: 42vh;
+    background: rgb(231, 231, 231);
+}
+
+.form-control{
+    position: relative;
+    left: 1vw;
+    top: 2vh;
+    width: 95%;
+}
+
+h3{
+    position: relative;
+    top: 1.3vh;
+    left: 1vw;
+}
+
+label{
+    position: relative;
+    left: 1vw;
+    top: 3vh;
+}
+
+.invalid-feedback{
+    position: relative;
+    left: 1vw;
+    top: 1.2vh;
+}
+
+.login-button{
+    position: absolute;
+    right: 9vw;
+    bottom: 2.7vh;
+    border: none;
+    border-radius: 7px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.register-button{
+    position: absolute;
+    right: 1vw;
+    bottom: 2.7vh;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(29, 89, 255);
+    color: white;
+    padding: 7px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
