@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { DogshopComponent } from './dogshop/dogshop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     FooterComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    DogshopComponent
   ],
   imports: [
     BrowserModule,
