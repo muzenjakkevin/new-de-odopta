@@ -20,8 +20,9 @@ footer {
   margin: 2em 0;
   height: 70px;
   background-color: #b6f542;
-  bottom: 0px;
+  top: 1100px;
   position: absolute;
+  
 }
 footer .copyright {
   width: 50%;
@@ -78,14 +79,14 @@ footer .social a:hover {
 
 .phone {
   background-color: #3d5b94;
-  font-size: 0.9em;
+  font-size: 0.6em;
   width: 20%;
 }
 
 
 .adress {
   background-color: #6dcd9a;
-  font-size: 0.8em;
+  font-size: 0.6em;
   width: 40%;
 }
 
