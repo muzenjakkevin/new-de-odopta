@@ -1,0 +1,43 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.divcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignc {
+  text-align: center;
+}
+
+.topdiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.getstartedbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 50%;
+  font-size: 20px;
+}
