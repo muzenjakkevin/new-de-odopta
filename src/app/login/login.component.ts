@@ -27,9 +27,9 @@ constructor(
 ) {
 
   // redirect to home if already logged in
-  if (this.authenticationService.currentUserValue) { 
-      this.router.navigate(['/']);
-  }
+  // if (this.authenticationService.currentUserValue) { 
+  //     this.router.navigate(['/welcome']);
+  // }
 }
 
 ngOnInit() {
@@ -64,5 +64,9 @@ onSubmit() {
         this.error = error;
         this.loading = false;
     });
-  } 
+  }
+
+  checkUser(){
+    return Boolean(this.authenticationService.checkIfLoggedIn())
+  }
 }

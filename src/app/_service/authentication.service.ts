@@ -13,6 +13,10 @@ export class AuthenticationService {
     this.currentUser = this.currentUserSubject.asObservable();
   }
 
+  checkIfLoggedIn() {
+    return localStorage.getItem('currentUser')
+  }
+
   public get currentUserValue() {
     return this.currentUserSubject.value;
   }

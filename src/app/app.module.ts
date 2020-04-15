@@ -12,6 +12,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdoptComponent } from './adopt/adopt.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     DashboardComponent,
     RegisterComponent,
     PagenotfoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    WelcomeComponent,
+    FooterComponent,
+    AdoptComponent
   ],
   imports: [
     BrowserModule,
