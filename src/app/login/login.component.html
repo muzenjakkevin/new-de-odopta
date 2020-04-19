@@ -3,9 +3,14 @@
 <ng-template #falseTemplate>
 
 <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+<div *ngIf="success" class="alert alert-success">{{success}}</div>
 
   <div class="login-form">
-    <h3>Login</h3>
+
+    <div class="sign-in">
+      <h3>Sign In</h3>
+    </div>
+    
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <label for="username">Username</label>
       <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
@@ -17,14 +22,16 @@
       <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
         <div *ngIf="f.password.errors.required">Password is required</div>
       </div>
-      <button class="login-button">
-        Login
-      </button>
+      <button class="login-button">Sign in</button>
+      <p class="register-or">or</p>
       <a routerLink="/register" class="register-button">Register</a>
     </form>
   </div>
 </ng-template>
 
 <ng-template #trueTemplate>
-  <p>You are now logged in</p>
+  <div class="logout-form">
+    <h3 class="logout-text">You are now logged in!</h3>
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
 </ng-template>

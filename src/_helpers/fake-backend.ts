@@ -4,6 +4,8 @@ import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
 let users = [{ id: 1, firstName: 'Kevin', lastName: 'Muzenjak', username: 'test', password: 'test' }];
+// let users = JSON.parse(localStorage.getItem('users')) || [];
+
 
 @Injectable()
 
@@ -22,6 +24,8 @@ function handleRoute() {
   switch (true) {
       case url.endsWith('/users/authenticate') && method === 'POST':
           return authenticate();
+      case url.endsWith('/users/register') && method === 'POST':
+          return register();    
       default:
           // pass through any requests not handled above
           return next.handle(request);
@@ -41,6 +45,20 @@ function authenticate() {
         lastName: user.lastName,
         token: 'fake-jwt-token'
       })
+}
+
+function register() {
+  const user = body
+
+  if (users.find(x => x.username === user.username)) {
+      return error('Username "' + user.username + '" is already taken')
+  }
+
+  user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
+  users.push(user);
+  localStorage.setItem('users', JSON.stringify(users));
+
+  return ok();
 }
 
 // helper functions
