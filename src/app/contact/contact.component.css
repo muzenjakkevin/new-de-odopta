@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 100px;
+    overflow: hidden;
+  }
+  
+  li a {
+    display: column;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    width: 30%;
+  }
+  
+  img {
+    float: right;
+    width: 33%;
+    padding-right: 50px;
+    padding-top: 35px;
+  }
+  

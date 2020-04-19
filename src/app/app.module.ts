@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdoptComponent } from './adopt/adopt.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdoptComponent } from './adopt/adopt.component';
     AboutComponent,
     WelcomeComponent,
     FooterComponent,
-    AdoptComponent
+    AdoptComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import { AdoptComponent } from './adopt/adopt.component';
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
-    fakeBackendProvider
+    fakeBackendProvider,
   ],
   bootstrap: [AppComponent]
 })

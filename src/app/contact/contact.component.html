@@ -1,0 +1,17 @@
+<h1 style="text-align: center;">Contact Information</h1>
+
+<div>
+  <div style="float: left;">
+    <ul>
+      <li *ngFor="let user of users$" style="margin: 20px;">
+        <a>{{ user.name }} - Email: {{ user.email }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <img
+      src="https://www.pinclipart.com/picdir/big/64-648622_contact-phone-white-transparent-background-clipart.png"
+    />
+  </div>
+</div>

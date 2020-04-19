@@ -8,6 +8,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { AboutComponent } from "./about/about.component";
 import { AdoptComponent } from './adopt/adopt.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: "welcome", component: WelcomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent },
   { path: "about", component: AboutComponent },
-  { path: "**", component: WelcomeComponent },
+  { path: "contact", component: ContactComponent},
+  { path: "**", component: WelcomeComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
