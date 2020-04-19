@@ -6,6 +6,11 @@ import { AuthenticationService } from '../_service';
   templateUrl: './adopt.component.html',
   styleUrls: ['./adopt.component.css']
 })
+
+/**
+ * Functions shows informations of the dogs on click
+ */
+
 export class AdoptComponent implements OnInit {
 
   constructor(private authenticationService: AuthenticationService) { }

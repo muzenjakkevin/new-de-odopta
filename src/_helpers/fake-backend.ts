@@ -9,6 +9,12 @@ let users = [{ id: 1, firstName: 'Kevin', lastName: 'Muzenjak', username: 'test'
 
 @Injectable()
 
+/**
+ * Fake backend contains handleRoute function that checks if the request matches one of the faked routes in the switch statement.
+ * Request to the authenticate route are handled by authenticate function which checks the username and password, if they are correct
+ * then the ok response is returned with the user details and a fake jwt token, otherwise an error response is returned.
+ */
+
   export class FakeBackendInterceptor implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
   const { url, method, headers, body } = request;
@@ -24,8 +30,8 @@ function handleRoute() {
   switch (true) {
       case url.endsWith('/users/authenticate') && method === 'POST':
           return authenticate();
-      case url.endsWith('/users/register') && method === 'POST':
-          return register();    
+      // case url.endsWith('/users/register') && method === 'POST':
+          //return register();    
       default:
           // pass through any requests not handled above
           return next.handle(request);
@@ -47,19 +53,19 @@ function authenticate() {
       })
 }
 
-function register() {
-  const user = body
+// function register() {
+//   const user = body
 
-  if (users.find(x => x.username === user.username)) {
-      return error('Username "' + user.username + '" is already taken')
-  }
+//   if (users.find(x => x.username === user.username)) {
+//       return error('Username "' + user.username + '" is already taken')
+//   }
 
-  user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
-  users.push(user);
-  localStorage.setItem('users', JSON.stringify(users));
+//   user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
+//   users.push(user);
+//   localStorage.setItem('users', JSON.stringify(users));
 
-  return ok();
-}
+//   return ok();
+// }
 
 // helper functions
 

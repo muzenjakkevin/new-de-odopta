@@ -10,6 +10,10 @@ import { AuthenticationService } from '../_service'
   styleUrls: ['login.component.css']
 })
 
+/**
+ * 
+ */
+
 export class LoginComponent implements OnInit {
 
 currentUser: any;
@@ -43,14 +47,15 @@ ngOnInit() {
   this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
 
   // show success message on registration
-  if (this.route.snapshot.queryParams['registered']) {
-    this.success = 'Registration successful';
-  }
+  // if (this.route.snapshot.queryParams['registered']) {
+  //   this.success = 'Registration successful';
+  // }
 }
 
 // convenience getter for easy access to form fields
 get f() { return this.loginForm.controls; }
 
+//Checks if the user is matching the one created in the fake backend, and sends it to local storage.
 onSubmit() {
   this.submitted = true;
 
@@ -76,10 +81,12 @@ onSubmit() {
     });
   }
 
+  //Removes item from localStorage
   logout(){
     this.authenticationService.logout()
   }
 
+  //Checks if localStorage contains item
   checkUser(){
     return Boolean(this.authenticationService.checkIfLoggedIn())
   }

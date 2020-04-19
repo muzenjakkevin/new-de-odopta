@@ -6,6 +6,12 @@ import { DataService } from "src/_helpers/data.service";
   templateUrl: "./contact.component.html",
   styleUrls: ["./contact.component.css"],
 })
+
+/**
+ * Imports DataService
+ * Creating an array containing the users and emails from jsonplaceholder
+ */
+
 export class ContactComponent implements OnInit {
   users$: User[];
 

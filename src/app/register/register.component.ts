@@ -27,6 +27,7 @@ export class RegisterComponent implements OnInit {
         }
     }
 
+    //Creates new formgroup, checks if input fields contains correct information
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
             firstName: ['', Validators.required],
@@ -39,6 +40,7 @@ export class RegisterComponent implements OnInit {
     // convenience getter for easy access to form fields
     get f() { return this.registerForm.controls; }
 
+    //Submits the registration and saves the user, making it possible to login with new user
     onSubmit() {
         this.submitted = true;
 
