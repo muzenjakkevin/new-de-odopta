@@ -1,0 +1,121 @@
+.login-form{
+    border-radius: 7px;
+    position: relative;
+    top: 10vh;
+    left: 37vw;
+    width: 30vw;
+    height: 72vh;
+    background: rgb(231, 231, 231);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sign-in{
+    background: rgb(210, 210, 210);
+    width: 100%;
+    height: 10vh;
+}
+
+.form-control{
+    position: relative;
+    width: 95%;
+    top: 8vh;
+    left: 0.8vw;
+    padding: 28px 40px;
+    margin: 8px 0;
+    border: none;
+    box-shadow: inset 0 0 2px #000000;
+}
+
+h3{
+    position: relative;
+    top: 3.3vh;
+    left: 12.5vw;
+    color: black;
+}
+
+label{
+    position: relative;
+    left: 1vw;
+    top: 9vh;
+}
+
+.invalid-feedback{
+    position: relative;
+    left: 1vw;
+    top: 8vh;
+}
+
+.login-button{
+    position: absolute;
+    left: 8vw;
+    bottom: 11.7vh;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 95, 119);
+    color: white;
+    padding: 12px 74px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.register-button{
+    position: absolute;
+    left: 7.6vw;
+    bottom: 7.2vh;
+    color: rgb(0, 95, 119);
+    padding: 7px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.register-or{
+    position: absolute;
+    left: 6.5vw;
+    bottom: 7.2vh;
+    padding: 7px 24px;
+    margin: 4px 2px;
+    font-size: 12px;
+}
+
+/* CSS for trueTemplate **/
+
+.logout-form{
+    border-radius: 7px;
+    position: relative;
+    top: 20vh;
+    left: 32vw;
+    width: 40vw;
+    height: 42vh;
+    background: rgb(231, 231, 231);
+}
+
+.logout-text{
+    position: relative;
+    top: 18vh;
+    left:11vw;
+}
+
+.logout-button{
+    position: absolute;
+    right: 1vw;
+    bottom: 2vh;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(255, 86, 86);
+    color: white;
+    padding: 7px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
