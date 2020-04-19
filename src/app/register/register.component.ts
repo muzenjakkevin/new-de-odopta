@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
-import { UserService, AuthenticationService } from '../_service';
+import {AuthenticationService } from '../_service';
 
 @Component({
     templateUrl: 'register.component.html' ,
@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
         private formBuilder: FormBuilder,
         private router: Router,
         private authenticationService: AuthenticationService,
-        private userService: UserService
+        //private userService: UserService
     ) {
         // redirect to home if already logged in
         if (this.authenticationService.currentUserValue) {
@@ -48,15 +48,15 @@ export class RegisterComponent implements OnInit {
         }
 
         this.loading = true;
-        this.userService.register(this.registerForm.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.router.navigate(['/login'], { queryParams: { registered: true }});
-                },
-                error => {
-                    this.error = error;
-                    this.loading = false;
-                });
+        // this.userService.register(this.registerForm.value)
+        //     .pipe(first())
+        //     .subscribe(
+        //         data => {
+        //             this.router.navigate(['/login'], { queryParams: { registered: true }});
+        //         },
+        //         error => {
+        //             this.error = error;
+        //             this.loading = false;
+        //         });
     }
 }
