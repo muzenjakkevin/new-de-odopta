@@ -10,9 +10,6 @@ import { AuthenticationService } from '../_service'
   styleUrls: ['login.component.css']
 })
 
-/**
- * 
- */
 
 export class LoginComponent implements OnInit {
 

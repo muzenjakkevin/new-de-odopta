@@ -1,235 +1,235 @@
-<ng-container *ngIf = "checkUser() == true; then trueTemplate; else falseTemplate"></ng-container>
+<ng-container *ngIf="checkUser() == true; then trueTemplate; else falseTemplate"></ng-container>
 
 <ng-template #trueTemplate>
 
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-<!-- First Photo Grid-->
-<div class="w3-row-padding w3-padding-10 w3-center">
-  <h2>Available dog breeds</h2>
-  <div class="w3-quarter">
-    <img (click)=toggleDisplayDiv()
-    src="https://upload.wikimedia.org/wikipedia/commons/0/00/1._DSC_0346_%2810096362833%29.jpg"
-    alt="German Shepherd">
-    <h3>German Shepherd</h3>
-    <div class="card" [hidden]="isShowDiv">
-      <p>The German Shepherd is a breed of medium to large-sized working dog that originated in Germany.
-      Strength, intelligence, trainability, and obedience some of its traits.
-      </p>
-      Weight
-      <ul>
-        <li>Male: 30-40 kg</li>
-        <li>Female: 22-33 kg</li>
-      </ul>
-      Height
-      <ul>
-        <li>Male: 60-65 cm</li>
-        <li>Female: 55-60 cm</li>
-      </ul>
-      Life Span 
-      <ul>
-        <li>9-13 Years</li>
-      </ul>
-    </div>
-
-    </div>
-    <div class="w3-quarter">
-    <img (click)=toggleDisplayDiv2()
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg/1280px-Golden_Retriever_Carlos_%2810581910556%29.jpg"
-    alt="Golden Retriever">
-    <h3>Goldern Retriever</h3>
-    <div class="card" [hidden]="isShowDiv2">
-      <p>The Golden Retriever is a medium-large gun dog that was bred to retrieve shot
-      waterfowl.app-dogshop
-      Golden retrievers have an instinctive love of water, and are easy to train to basic or advanced
-      obedience standards.
-      </p>
-      Weight
-      <ul>
-        <li>Male: 29-34 kg</li>
-        <li>Female: 25-29 kg</li>
-      </ul>
-      Height
-      <ul>
-        <li>Male: 56-61 cm</li>
-        <li>Female: 51-56 cm</li>
-      </ul>
-      Life Span 
-      <ul>
-        <li>10-12 Years</li>
-      </ul>
-    </div>
-
-    </div>
-    <div class="w3-quarter">
-    <img (click)=toggleDisplayDiv3()
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jean_Dark_Sn%C3%B6_of_Sweden.jpg/1280px-Jean_Dark_Sn%C3%B6_of_Sweden.jpg"
-    alt="Dobermann">
-    <h3>Dobermann</h3>
-    <div [hidden]="isShowDiv3">
-      <p>The Dobermann is a medium-large breed of domestic dog, Dobermanns are known to be intelligent,
-      alert,
-      and tenaciously loyal companions and guard dogs. </p>
-      <p>
-      Weight
-      <ul>
-        <li>Male: 29-34 kg</li>
-        <li>Female: 25-29 kg</li>
-      </ul>
-      Height
-      <ul>
-        <li>Male: 56-61 cm</li>
-        <li>Female: 51-56 cm</li>
-      </ul>
-      Life Span 
-      <ul>
-        <li>10-12 Years</li>
-      </ul>
-    </div>
-
-    </div>
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-10 w3-center">
+      <h2>Available dog breeds</h2>
       <div class="w3-quarter">
-      <img (click)=toggleDisplayDiv4()
-      src="https://upload.wikimedia.org/wikipedia/commons/2/26/Rottweiler_standing_facing_left.jpg"
-      alt="Rottweiler">
-      <h3>Rottweiler</h3>
-      <div [hidden]="isShowDiv4">
-        <p>The Rottweiler is a breed of domestic dog, regarded as medium-to-large or large. The Rottweiler
-        is
-        good-natured, placid in basic disposition, very devoted, obedient, biddable and eager to work.
-        </p>
-        Weight
-        <ul>
-          <li>Male: 29-34 kg</li>
-          <li>Female: 25-29 kg</li>
-        </ul>
-        Height
-        <ul>
-          <li>Male: 56-61 cm</li>
-          <li>Female: 51-56 cm</li>
-        </ul>
-        Life Span 
-        <ul>
-          <li>10-12 Years</li>
-        </ul>
+        <img (click)=toggleDisplayDiv()
+          src="https://upload.wikimedia.org/wikipedia/commons/0/00/1._DSC_0346_%2810096362833%29.jpg"
+          alt="German Shepherd">
+        <h3>German Shepherd</h3>
+        <div class="card" [hidden]="isShowDiv">
+          <p>The German Shepherd is a breed of medium to large-sized working dog that originated in Germany.
+            Strength, intelligence, trainability, and obedience some of its traits.
+          </p>
+          Weight
+          <ul>
+            <li>Male: 30-40 kg</li>
+            <li>Female: 22-33 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 60-65 cm</li>
+            <li>Female: 55-60 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>9-13 Years</li>
+          </ul>
+        </div>
+
       </div>
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv2()
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg/1280px-Golden_Retriever_Carlos_%2810581910556%29.jpg"
+          alt="Golden Retriever">
+        <h3>Goldern Retriever</h3>
+        <div class="card" [hidden]="isShowDiv2">
+          <p>The Golden Retriever is a medium-large gun dog that was bred to retrieve shot
+            waterfowl.app-dogshop
+            Golden retrievers have an instinctive love of water, and are easy to train to basic or advanced
+            obedience standards.
+          </p>
+          Weight
+          <ul>
+            <li>Male: 29-34 kg</li>
+            <li>Female: 25-29 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 56-61 cm</li>
+            <li>Female: 51-56 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>10-12 Years</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv3()
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jean_Dark_Sn%C3%B6_of_Sweden.jpg/1280px-Jean_Dark_Sn%C3%B6_of_Sweden.jpg"
+          alt="Dobermann">
+        <h3>Dobermann</h3>
+        <div [hidden]="isShowDiv3">
+          <p>The Dobermann is a medium-large breed of domestic dog, Dobermanns are known to be intelligent,
+            alert,
+            and tenaciously loyal companions and guard dogs. </p>
+          <p>
+            Weight
+          <ul>
+            <li>Male: 29-34 kg</li>
+            <li>Female: 25-29 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 56-61 cm</li>
+            <li>Female: 51-56 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>10-12 Years</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv4()
+          src="https://upload.wikimedia.org/wikipedia/commons/2/26/Rottweiler_standing_facing_left.jpg"
+          alt="Rottweiler">
+        <h3>Rottweiler</h3>
+        <div [hidden]="isShowDiv4">
+          <p>The Rottweiler is a breed of domestic dog, regarded as medium-to-large or large. The Rottweiler
+            is
+            good-natured, placid in basic disposition, very devoted, obedient, biddable and eager to work.
+          </p>
+          Weight
+          <ul>
+            <li>Male: 29-34 kg</li>
+            <li>Female: 25-29 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 56-61 cm</li>
+            <li>Female: 51-56 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>10-12 Years</li>
+          </ul>
+        </div>
       </div>
     </div>
 
 
-  <!-- Second Photo Grid-->
+    <!-- Second Photo Grid-->
     <div class="w3-row-padding w3-padding-16 w3-center">
       <div class="w3-quarter">
-      <img (click)=toggleDisplayDiv5()
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WelshCorgi.jpeg/330px-WelshCorgi.jpeg"
-      alt="Welsh Corgi">
-      <h3>Welsh Corgi</h3>
-      <div [hidden]="isShowDiv5">
-        <p>The Welsh Corgi is a small type of herding dog that originated in Wales, United Kingdom.Corgis in
-        the modern era often compete in dog agility trials, obedience, showmanship, flyball, tracking,
-        and herding events. </p>
-        Weight
-        <ul>
-          <li>Male: 14-17 kg</li>
-          <li>Female: 14-17 kg</li>
-        </ul>
-        Height
-        <ul>
-          <li>Male: 27-32 cm</li>
-          <li>Female: 27-32 cm</li>
-        </ul>
-        Life Span 
-        <ul>
-          <li>12 Years</li>
-        </ul>
+        <img (click)=toggleDisplayDiv5()
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WelshCorgi.jpeg/330px-WelshCorgi.jpeg"
+          alt="Welsh Corgi">
+        <h3>Welsh Corgi</h3>
+        <div [hidden]="isShowDiv5">
+          <p>The Welsh Corgi is a small type of herding dog that originated in Wales, United Kingdom.Corgis in
+            the modern era often compete in dog agility trials, obedience, showmanship, flyball, tracking,
+            and herding events. </p>
+          Weight
+          <ul>
+            <li>Male: 14-17 kg</li>
+            <li>Female: 14-17 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 27-32 cm</li>
+            <li>Female: 27-32 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>12 Years</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="w3-quarter">
-    <img (click)=toggleDisplayDiv6()
-    src="https://upload.wikimedia.org/wikipedia/commons/e/e4/BORDER_COLLIE%2C_Simaro_Million_Dollar_Baby_%2824290879465%29_2.jpg"
-    alt="Border Collie">
-    <h3>Border Collie</h3>
-      <div [hidden]="isShowDiv6">
-        <p>The Border Collie is a working and herding dog breed developed in the Scottish borders for
-        herding
-        livestock, especially sheep.
-        Considered highly intelligent, extremely energetic, acrobatic and athletic, they frequently
-        compete
-        with great success in sheepdog trials and dog sports.
-        </p>
-        Weight
-        <ul>
-          <li>Male: 14-20 kg</li>
-          <li>Female: 12-19 kg</li>
-        </ul>
-        Height
-        <ul>
-          <li>Male: 48-56 cm</li>
-          <li>Female: 46-53 cm</li>
-        </ul>
-        Life Span 
-        <ul>
-          <li>10-17 Years</li>
-        </ul>
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv6()
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e4/BORDER_COLLIE%2C_Simaro_Million_Dollar_Baby_%2824290879465%29_2.jpg"
+          alt="Border Collie">
+        <h3>Border Collie</h3>
+        <div [hidden]="isShowDiv6">
+          <p>The Border Collie is a working and herding dog breed developed in the Scottish borders for
+            herding
+            livestock, especially sheep.
+            Considered highly intelligent, extremely energetic, acrobatic and athletic, they frequently
+            compete
+            with great success in sheepdog trials and dog sports.
+          </p>
+          Weight
+          <ul>
+            <li>Male: 14-20 kg</li>
+            <li>Female: 12-19 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 48-56 cm</li>
+            <li>Female: 46-53 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>10-17 Years</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  <div class="w3-quarter">
-    <img (click)=toggleDisplayDiv7()
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/ChowChow2Szczecin.jpg/1280px-ChowChow2Szczecin.jpg"
-    alt="Chow Chow">
-    <h3>Chow Chow</h3>
-    <div [hidden]="isShowDiv7">
-      <p>Most commonly kept as pets, Chow-Chows tend to display discernment of strangers and can become
-      fiercely protective of their owners and property.
-      Chow-Chow are not excessively active, meaning that they can be housed in an apartment.
-      </p>
-      Weight
-      <ul>
-        <li>Male: 18-41 kg</li>
-        <li>Female: 16-39 kg</li>
-      </ul>
-      Height
-      <ul>
-        <li>Male: 43-56 cm</li>
-        <li>Female: 43-56 cm</li>
-      </ul>
-      Life Span 
-      <ul>
-        <li>11-13 Years</li>
-      </ul>
-    </div>
-  </div>
-    <div class="w3-quarter">
-      <img (click)=toggleDisplayDiv8()
-        src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Great_dane.jpg" alt="Great Dane">
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv7()
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/ChowChow2Szczecin.jpg/1280px-ChowChow2Szczecin.jpg"
+          alt="Chow Chow">
+        <h3>Chow Chow</h3>
+        <div [hidden]="isShowDiv7">
+          <p>Most commonly kept as pets, Chow-Chows tend to display discernment of strangers and can become
+            fiercely protective of their owners and property.
+            Chow-Chow are not excessively active, meaning that they can be housed in an apartment.
+          </p>
+          Weight
+          <ul>
+            <li>Male: 18-41 kg</li>
+            <li>Female: 16-39 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 43-56 cm</li>
+            <li>Female: 43-56 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>11-13 Years</li>
+          </ul>
+        </div>
+      </div>
+      <div class="w3-quarter">
+        <img (click)=toggleDisplayDiv8() src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Great_dane.jpg"
+          alt="Great Dane">
         <h3>Great Dane</h3>
-          <div [hidden]="isShowDiv8">
-            <p>The Great Dane is a German breed of domestic dog known for its large size.
+        <div [hidden]="isShowDiv8">
+          <p>The Great Dane is a German breed of domestic dog known for its large size.
             The Great Dane's large and imposing appearance belies its friendly nature. They are known for
             seeking physical affection with their owners, and the breed is often referred to as a "gentle
             giant".
-            </p>
-            Weight
-            <ul>
-              <li>Male: 50-82 kg</li>
-              <li>Female: 50-82 kg</li>
-            </ul>
-            Height
-            <ul>
-              <li>Male: 76-79 cm</li>
-              <li>Female: 71-76 cm</li>
-            </ul>
-            Life Span 
-            <ul>
-              <li>8-10 Years</li>
-            </ul>
-          </div>
+          </p>
+          Weight
+          <ul>
+            <li>Male: 50-82 kg</li>
+            <li>Female: 50-82 kg</li>
+          </ul>
+          Height
+          <ul>
+            <li>Male: 76-79 cm</li>
+            <li>Female: 71-76 cm</li>
+          </ul>
+          Life Span
+          <ul>
+            <li>8-10 Years</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
   </div>
-
-</div>
-<h2 style="margin-left: 17%;">If you're interested in any breed or have any questions please contact us!</h2>
+  <h2 style="margin-left: 17%;">If you're interested in any breed or have any questions please contact us!</h2>
 </ng-template>
 
 <ng-template #falseTemplate>

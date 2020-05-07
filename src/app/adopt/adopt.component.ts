@@ -7,8 +7,8 @@ import { AuthenticationService } from '../_service';
   styleUrls: ['./adopt.component.css']
 })
 
-/**
- * Functions shows informations of the dogs on click
+/*
+ * Functions shows informations of the dogs on click, user can access adopt page unless logged in
  */
 
 export class AdoptComponent implements OnInit {
