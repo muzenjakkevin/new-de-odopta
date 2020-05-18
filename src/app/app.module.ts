@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RegisterComponent } from './register/register.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
@@ -24,7 +23,6 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RegisterComponent,
     PagenotfoundComponent,
     NavbarComponent,
     AboutComponent,
